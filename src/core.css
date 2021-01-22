@@ -1,0 +1,39 @@
+.vjk-modal-overlay,
+.vjk-modal-container {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+}
+
+.vjk-modal-overlay {
+    background: #fff;
+    opacity: .5
+}
+
+.vjk-modal-container {
+    overflow: auto;
+}
+
+*:first-child + html .vjk-modal-container {
+    height: 100%
+}
+
+.vjk-modal-container_i {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.vjk-modal-container_i2 {
+    display: table-cell;
+    padding: 24px;
+    vertical-align: middle;
+}
+
+.vjk-modal-show {
+    display: block;
+}
