@@ -1,15 +1,26 @@
 {
     "name": "@vjik/vue-modal",
-    "version": "0.1.2",
+    "version": "0.1.4",
     "description": "Modal windows for Vue.js (2.x)",
+    "keywords": [
+        "vue",
+        "vuejs",
+        "vue-js",
+        "modal",
+        "vue-modal"
+    ],
+    "author": "Sergei Predvoditelev",
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/vjik/vue-modal",
+    "bugs": {
+        "url": "https://github.com/vjik/vue-modal/issues"
+    },
     "main": "src/plugin.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "demo-dev": "webpack  --mode=development --watch --config ./demo/webpack.js",
         "demo-build": "webpack  --mode=production --config ./demo/webpack.js"
     },
-    "author": "Sergei Predvoditelev",
-    "license": "BSD-3-Clause",
     "dependencies": {
         "vue": "^2.6.12"
     },
