@@ -2,6 +2,8 @@
 
 Modal windows for Vue.js (2.x)
 
+- [Demo](https://vjik.github.io/vue-modal/demo/)
+
 ## License
 
 The Vue.js Modal is free software. It is released under the terms of the BSD License.
