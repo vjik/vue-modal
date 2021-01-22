@@ -1,6 +1,6 @@
 {
     "name": "@vjik/vue-modal",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "description": "Modal windows for Vue.js (2.x)",
     "main": "src/plugin.js",
     "scripts": {
