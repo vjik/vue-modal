@@ -11654,7 +11654,18 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .vjk-modal-container_i2 {
     display: table-cell;
     padding: 24px;
+}
+
+.vjk-modal-va-top {
+    vertical-align: top;
+}
+
+.vjk-modal-va-middle {
     vertical-align: middle;
+}
+
+.vjk-modal-va-bottom {
+    vertical-align: bottom;
 }
 
 .vjk-modal-show {

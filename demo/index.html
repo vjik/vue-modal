@@ -14,13 +14,53 @@
             <h1 class="title">
                 Vue.js Modal Demo
             </h1>
-            <div class="button" @click="show('simple')">Simple</div>
-            <div class="button" @click="show('extraHeight')">Extra Height</div>
-            <div class="button" @click="show('nested')">Nested</div>
+            <div>
+                <div class="button" @click="show('simple')">Simple</div>
+                <div class="button" @click="show('verticalAlignTop')">Vertical Align Top</div>
+                <div class="button" @click="show('verticalAlignBottom')">Vertical Align Bottom</div>
+                <div class="button" @click="show('extraHeight')">Extra Height</div>
+                <div class="button" @click="show('nested')">Nested</div>
+            </div>
         </div>
     </section>
 
     <v-modal name="simple" v-slot:default="modal">
+        <div class="container is-max-desktop">
+            <div class="card">
+                <div class="card-content">
+                    <p class="title">
+                        “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                    </p>
+                    <p class="subtitle">
+                        Jeff Atwood
+                    </p>
+                </div>
+                <footer class="card-footer">
+                    <div class="card-footer-item is-clickable" @click="modal.hide">Close</div>
+                </footer>
+            </div>
+        </div>
+    </v-modal>
+
+    <v-modal name="verticalAlignTop" vertical-align="top" v-slot:default="modal">
+        <div class="container is-max-desktop">
+            <div class="card">
+                <div class="card-content">
+                    <p class="title">
+                        “There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.”
+                    </p>
+                    <p class="subtitle">
+                        Jeff Atwood
+                    </p>
+                </div>
+                <footer class="card-footer">
+                    <div class="card-footer-item is-clickable" @click="modal.hide">Close</div>
+                </footer>
+            </div>
+        </div>
+    </v-modal>
+
+    <v-modal name="verticalAlignBottom" vertical-align="bottom" v-slot:default="modal">
         <div class="container is-max-desktop">
             <div class="card">
                 <div class="card-content">

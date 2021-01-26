@@ -4,7 +4,7 @@ export default {
             <div class="vjk-modal-overlay" :class="{\'vjk-modal-show\': visible}"></div>\
             <div class="vjk-modal-container" :class="{\'vjk-modal-show\': visible}">\
                 <div class="vjk-modal-container_i">\
-                    <div class="vjk-modal-container_i2">\
+                    <div :class="containerI2Class">\
                         <slot :hide="hide"/>\
                     </div>\
                 </div>\
@@ -16,11 +16,24 @@ export default {
             required: true,
             type: String,
         },
+        verticalAlign: {
+            type: String,
+            default: 'middle',
+        },
     },
     data() {
         return {
             visible: false,
         };
+    },
+    computed: {
+        containerI2Class() {
+            let classes = {
+                'vjk-modal-container_i2': true,
+            };
+            classes['vjk-modal-va-' + this.verticalAlign] = true;
+            return classes;
+        },
     },
     methods: {
         show() {
